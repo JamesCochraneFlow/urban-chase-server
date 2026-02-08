@@ -14,9 +14,9 @@ app.use(express.static("public"));
 
 let players = {}; // {socketId: {lat, lon, role}}
 
-app.get("/", (req, res) => {
-  res.send("Urban Chase backend running");
-});
+// app.get("/", (req, res) => {
+//   res.send("Urban Chase backend running");
+// });
 
 
 io.on("connection", (socket) => {
